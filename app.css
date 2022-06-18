@@ -3,7 +3,7 @@
     License: none (public domain)
 */
 
-/* html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -22,9 +22,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-} */
+}
 /* HTML5 display-role reset for older browsers */
-/* article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -45,7 +45,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-} */
+}
 
 html {
 	box-sizing: border-box;
@@ -57,7 +57,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 150vh;
+	min-height: 100vh;
 }
 
 .panel {
@@ -65,7 +65,7 @@ body {
 	border-radius: 10px;
 	padding: 15px 25px;
 	width: 100%;
-	max-width: 860px;
+	max-width: 960px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -82,4 +82,35 @@ body {
 .pricing-img {
 	margin-bottom: 25px;
 	max-width: 100%;
+}
+
+.pricing-header {
+	color: #888;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.pricing-features {
+	margin: 50px 0 25px;
+	color: #016ff9;
+}
+
+.pricing-features-items {
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 15px 0;
+	border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features:last-child {
+	border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+	color: #016ff9;
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
 }
